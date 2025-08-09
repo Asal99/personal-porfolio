@@ -1,11 +1,11 @@
-// src/app/blogs/[id]/page.tsx
 import dbConnect from "../../../utils/dbConnect";
-import BlogModel from "../../models/Blog"; // ✅ NO "@/src", lowercase "blog"
+import BlogModel from "../../models/Blog";
 import { notFound } from "next/navigation";
 
-export const runtime = "nodejs"; // ✅ Mongoose needs Node runtime
-
-type PageProps = { params: { id: string } };
+export const runtime = "nodejs";
+interface PageProps {
+  params: { id: string };
+}
 
 type BlogType = {
   _id?: string;
