@@ -3,8 +3,9 @@ import BlogModel from "../../models/Blog";
 import { notFound } from "next/navigation";
 
 export const runtime = "nodejs";
+
 interface PageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 type BlogType = {
@@ -16,9 +17,10 @@ type BlogType = {
 };
 
 export default async function BlogDetailPage({ params }: PageProps) {
+  const { id } = await params;
   await dbConnect();
 
-  const blog = (await BlogModel.findById(params.id)
+  const blog = (await BlogModel.findById(id)
     .select("title slug content createdAt")
     .lean()) as BlogType | null;
 
