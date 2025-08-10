@@ -66,7 +66,7 @@ const About = () => {
                 <a href="/contact" className="contact-btn">
                   Get In Touch
                 </a>
-                <a href="/resume.pdf" className="resume-btn" download>
+                <a href="/Asal-cv.pdf" className="resume-btn" download>
                   <FaDownload />
                   Download Resume
                 </a>
