@@ -1,6 +1,7 @@
+"use client";
+
 import React from "react";
 import "./style.css";
-import Image from "next/image";
 import {
   FaFacebook,
   FaInstagram,
@@ -42,15 +43,17 @@ const About = () => {
 
               <div className="about-description">
                 <p className="intro-text">
-                  I'm a passionate Front End Developer with a strong eye for
-                  design and a love for clean, efficient code. I specialize in
-                  building responsive, user-centric web applications using
-                  modern technologies.
+                  I'm a Full Stack Developer passionate about building
+                  high-quality web applications from frontend to backend. I
+                  focus on writing clean, maintainable code and delivering fast,
+                  user-friendly digital experiences.
                 </p>
 
                 <p className="detailed-text">
-                  I've worked on various projects. My expertise includes
-                  frontend frameworks like React and Next.js, etc.
+                  I specialize in developing responsive, full-stack web
+                  applications using modern technologies like React, Next.js,
+                  Node.js, Express, and MongoDB. I enjoy transforming ideas into
+                  scalable, secure, and user-friendly digital solutions.
                 </p>
 
                 <p className="philosophy-text">
@@ -91,51 +94,66 @@ const About = () => {
 
           <div className="skills-section">
             <h2>Technical Skills</h2>
+
             <div className="skills-grid">
               <div className="skill-category">
-                <h3>Frontend Development</h3>
-                <div className="skill-items">
-                  <div className="skill-item">
-                    <span className="skill-name">React.js</span>
-                    <div className="skill-bar">
-                      <div
-                        className="skill-progress"
-                        style={{ width: "90%" }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="skill-item">
-                    <span className="skill-name">Next.js</span>
-                    <div className="skill-bar">
-                      <div
-                        className="skill-progress"
-                        style={{ width: "85%" }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="skill-item">
-                    <span className="skill-name">TypeScript</span>
-                    <div className="skill-bar">
-                      <div
-                        className="skill-progress"
-                        style={{ width: "80%" }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="skill-item">
-                    <span className="skill-name">Tailwind CSS</span>
-                    <div className="skill-bar">
-                      <div
-                        className="skill-progress"
-                        style={{ width: "95%" }}
-                      ></div>
-                    </div>
-                  </div>
+                <h3>Frontend</h3>
+                <p className="skill-desc">
+                  Creating responsive and user-friendly interfaces with modern
+                  frontend technologies.
+                </p>
+                <div className="skill-tags">
+                  <span className="skill-tag">React.js</span>
+                  <span className="skill-tag">Next.js</span>
+                  <span className="skill-tag">JavaScript</span>
+                  <span className="skill-tag">TypeScript</span>
+                  <span className="skill-tag">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div className="skill-category">
+                <h3>Backend</h3>
+                <p className="skill-desc">
+                  Building secure APIs, authentication systems, and server-side
+                  features.
+                </p>
+                <div className="skill-tags">
+                  <span className="skill-tag">Node.js</span>
+                  <span className="skill-tag">Express.js</span>
+                  <span className="skill-tag">REST APIs</span>
+                  <span className="skill-tag">JWT Auth</span>
+                </div>
+              </div>
+
+              <div className="skill-category">
+                <h3>Database</h3>
+                <p className="skill-desc">
+                  Managing data storage, schemas, and database operations for
+                  web apps.
+                </p>
+                <div className="skill-tags">
+                  <span className="skill-tag">MongoDB</span>
+                  <span className="skill-tag">Mongoose</span>
+                  <span className="skill-tag">MySQL</span>
+                </div>
+              </div>
+
+              <div className="skill-category">
+                <h3>Tools & Deployment</h3>
+                <p className="skill-desc">
+                  Using modern tools to build, test, manage, and deploy
+                  applications.
+                </p>
+                <div className="skill-tags">
+                  <span className="skill-tag">Git</span>
+                  <span className="skill-tag">GitHub</span>
+                  <span className="skill-tag">Vercel</span>
+                  <span className="skill-tag">Render</span>
+                  <span className="skill-tag">Postman</span>
                 </div>
               </div>
             </div>
           </div>
-
           <div className="social-section">
             <h3>Connect With Me</h3>
             <div className="social-links">

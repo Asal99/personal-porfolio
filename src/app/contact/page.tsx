@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import "./style.css";
+import "./style.css"
 import ContactFormFields from "../../components/ContactFormFields";
 import { formFields } from "../../utils/formConfig";
 import { sendEmail } from "../../utils/emailSender";

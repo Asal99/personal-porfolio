@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./style.css";
+import "./portfolio.css";
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -17,18 +17,30 @@ const Portfolio = () => {
   const portfolioProjects = [
     {
       id: 1,
+      image: "/ecom.png",
+      title: "MERN E-Commerce Platform",
+      description:
+        "A full-stack e-commerce platform featuring secure authentication, product management, shopping cart, order tracking, and a responsive admin dashboard.",
+      category: "fullstack",
+      technologies: ["React", "Tailwind CSS", "Express", "Mongo Db", "node js"],
+      github: "https://github.com/Asal99/E-commerce",
+      liveDemo: "https://e-commerce-d3qv.vercel.app/",
+      featured: true,
+    },
+    {
+      id: 2,
       image: "/Recipe.jpg",
       title: "Recipe Finder",
       description:
         "A responsive recipe search application that fetches meal data from TheMealDB API",
-      category: "fullstack",
+      category: "frontend",
       technologies: ["React", "Tailwind CSS", "TheMealDB API"],
       github: "https://github.com/Asal99/recipe-finder",
       liveDemo: "https://demo.com",
       featured: true,
     },
     {
-      id: 2,
+      id: 3,
       image: "/diabetes.webp",
       title: "DiaSense",
       description:
@@ -40,7 +52,7 @@ const Portfolio = () => {
       featured: true,
     },
     {
-      id: 3,
+      id: 4,
       image: "/portfolio.png",
       title: "Portfolio Website",
       description:
@@ -91,7 +103,7 @@ const Portfolio = () => {
     activeFilter === "all"
       ? portfolioProjects
       : portfolioProjects.filter(
-          (project) => project.category === activeFilter
+          (project) => project.category === activeFilter,
         );
 
   const getCategoryIcon = (category: string) => {

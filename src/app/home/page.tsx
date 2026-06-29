@@ -39,7 +39,7 @@ const Home = () => {
               Hi, I'm <span className="gradient-text">Asal Poudel</span>
             </h1>
             <h2 className={`hero-subtitle ${isVisible ? "fade-in-up" : ""}`}>
-              Front End Developer & UI/UX Designer
+              Full Stack Developer
             </h2>
             <p className={`hero-description ${isVisible ? "fade-in-up" : ""}`}>
               I create beautiful, functional, and user-centered digital
@@ -116,27 +116,63 @@ const Home = () => {
           <div className="about-content">
             <div className="about-text">
               <p className="about-intro">
-                I'm a passionate Front End Developer with a strong eye for
-                design and a love for clean, efficient code. I specialize in
-                building responsive, user-centric web applications using modern
-                technologies.
+                I'm a passionate Full Stack Developer with a strong eye for
+                design and a passion for building scalable, high-performance web
+                applications. I specialize in developing responsive,
+                user-friendly interfaces while creating secure and efficient
+                backend systems using modern web technologies.
               </p>
               <p className="about-description">
-                With expertise in React, Next.js, tailwind, and modern web
-                technologies, I focus on creating seamless user experiences that
-                combine functionality with aesthetics. Whether I'm optimizing
-                performance or crafting intuitive layouts, I enjoy translating
-                complex problems into elegant digital solutions.
+                With expertise in React, Next.js, Node.js, Express.js, MongoDB,
+                Tailwind CSS, and modern web technologies, I build scalable
+                full-stack applications that deliver seamless user experiences.
+                From designing responsive frontend interfaces to developing
+                secure backend APIs and managing databases, I enjoy transforming
+                complex ideas into efficient, high-quality digital solutions.
               </p>
 
               <div className="skills-grid">
                 <div className="skill-category">
                   <h3>Frontend</h3>
                   <div className="skill-tags">
-                    <span className="skill-tag">React</span>
+                    <span className="skill-tag">React.js</span>
                     <span className="skill-tag">Next.js</span>
+                    <span className="skill-tag">JavaScript</span>
                     <span className="skill-tag">TypeScript</span>
+                    <span className="skill-tag">HTML5</span>
+                    <span className="skill-tag">CSS3</span>
                     <span className="skill-tag">Tailwind CSS</span>
+                  </div>
+                </div>
+
+                <div className="skill-category">
+                  <h3>Backend</h3>
+                  <div className="skill-tags">
+                    <span className="skill-tag">Node.js</span>
+                    <span className="skill-tag">Express.js</span>
+                    <span className="skill-tag">REST APIs</span>
+                    <span className="skill-tag">JWT Authentication</span>
+                  </div>
+                </div>
+
+                <div className="skill-category">
+                  <h3>Database</h3>
+                  <div className="skill-tags">
+                    <span className="skill-tag">MongoDB</span>
+                    <span className="skill-tag">Mongoose</span>
+                    <span className="skill-tag">MySQL</span>
+                  </div>
+                </div>
+
+                <div className="skill-category">
+                  <h3>Tools & Deployment</h3>
+                  <div className="skill-tags">
+                    <span className="skill-tag">Git</span>
+                    <span className="skill-tag">GitHub</span>
+                    <span className="skill-tag">Vercel</span>
+                    <span className="skill-tag">Render</span>
+                    <span className="skill-tag">Postman</span>
+                    <span className="skill-tag">VS Code</span>
                   </div>
                 </div>
               </div>
@@ -164,6 +200,46 @@ const Home = () => {
           </div>
 
           <div className="projects-grid">
+            <div className="project-card hover-lift">
+              <div className="project-image">
+                <img src="/ecom.png" alt="Project 1" />
+                <div className="project-overlay">
+                  <div className="project-links">
+                    <a
+                      href="https://github.com/Asal99/E-commerce"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      <FaGithub />
+                    </a>
+                    <a
+                      href="https://e-commerce-d3qv.vercel.app/"
+                      className="project-link"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3>MERN E-Commerce Platform</h3>
+                <p>
+                  A full-stack e-commerce platform featuring secure
+                  authentication, product management, shopping cart, order
+                  tracking, and a responsive admin dashboard.
+                </p>
+                <div className="project-tech">
+                  <span className="skill-tag">React.js</span>
+                  <span className="skill-tag">Tailwind CSS</span>
+                  <span className="skill-tag">Node.js</span>
+                  <span className="skill-tag">Express.js</span>
+                  <span className="skill-tag">Mongo DB</span>
+                  <span className="skill-tag">REST APIs</span>
+                  <span className="skill-tag">JWT Authentication</span>
+                </div>
+              </div>
+            </div>
             <div className="project-card hover-lift">
               <div className="project-image">
                 <img src="/Recipe.jpg" alt="Project 1" />
