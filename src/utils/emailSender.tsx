@@ -1,5 +1,4 @@
-import emailjs from "emailjs-com";
-
+import emailjs from "@emailjs/browser";
 export const sendEmail = async (form: {
   name: string;
   email: string;
@@ -13,6 +12,6 @@ export const sendEmail = async (form: {
       email: form.email,
       message: form.message,
     },
-    "s_1ounUH92kIaR3Gt"
+    "s_1ounUH92kIaR3Gt",
   );
 };
